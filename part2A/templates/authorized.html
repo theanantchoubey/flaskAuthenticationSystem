@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Authorized Access</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/4924/4924714.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .home-button {
+            text-decoration: none;
+            display: inline-block;
+            background-color: #4285f4;
+            /* Lighter blue, or any other color you prefer */
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+            margin-top: 10px;
+        }
+
+        .home-button:hover {
+            background-color: #357ae8;
+            /* Slightly darker shade of blue on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>You are logged in as - {{ username }}</h1>
+    <span>Now you can access the API Functionalities</span>
+    <p>Click the button below to return to the home page:</p>
+    <a href="/" class="home-button">Home</a>
+</body>
+
+</html>

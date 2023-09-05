@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Result</title>
+    <link rel="icon" type="image/png" href="https://www.freeiconspng.com/uploads/multimedia-photo-icon-31.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+        }
+
+        a:hover {
+            color: #555;
+        }
+
+        p.filename {
+            font-size: 24px;
+            /* Increase the font size */
+            margin: 10px 0;
+        }
+
+        /* Logout Button Styles */
+        a.logout-button {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: #e74c3c;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        a.logout-button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Uploaded Image Name:</h1>
+    <p class="filename">{{ filename }}</p>
+    <a href="/">Back to Upload</a>
+    <br />
+    <a href="/logout" class="logout-button">Logout</a>
+</body>
+
+</html>
